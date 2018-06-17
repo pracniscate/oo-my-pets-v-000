@@ -3,13 +3,18 @@ class Owner
   @@all = []
 
   def initialize(name)
-    @name = ""
-    # @species = "human"
     @pets = {fishes: [], cats: [], dogs: []} # owner knows about its pets
+    @name = "" # keep track of the owners that have been created
     @@all << self
   end
 
   def self.all
     @@all
   end
+
+  # can count how many owners have been created
+  def self.count 
+    @@all.length 
+  end
+  
 end
