@@ -1,6 +1,7 @@
 class Owner
   attr_accessor :pets, :name
   attr_reader :species # cannot change it species
+  
   @@all = []
 
   def initialize(species)
@@ -26,6 +27,10 @@ class Owner
 
   def say_species
     "I am a #{@species}." # can say its species
+  end
+
+  def buy_fish(name) # can buy a fish that is an instance of the Fish class
+    pets[:fishes] << Fish.new(name)
   end
 
 end
