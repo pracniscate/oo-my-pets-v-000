@@ -17,8 +17,8 @@ class Owner
   #   @@all.length
   # end
 
-  def self.reset_all 
-    @@all.clear 
+  def self.reset_all
+    @@all.clear
   end
 
 end
