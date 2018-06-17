@@ -13,8 +13,12 @@ class Owner
   end
 
   # can count how many owners have been created
-  def self.count
-    @@all.length
+  # def self.count
+  #   @@all.length
+  # end
+
+  def self.reset_all 
+    @@all.clear 
   end
 
 end
