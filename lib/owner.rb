@@ -1,7 +1,7 @@
 class Owner
   attr_accessor :pets, :name
   attr_reader :species # cannot change it species
-  
+
   @@all = []
 
   def initialize(species)
