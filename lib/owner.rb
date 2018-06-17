@@ -3,7 +3,7 @@ class Owner
   @@all = []
 
   def initialize
-    # @name = ""
+    @name = ""
     # @species = "human"
     @pets = {fishes: [], cats: [], dogs: []} # owner knows about its pets
     @@all << self
