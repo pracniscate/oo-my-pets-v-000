@@ -6,6 +6,7 @@ class Owner
     @name = ""
     @species = "human"
     @pets = {fishes: [], cats: [], dogs: []} # owner knows about its pets
+    @@all << self
   end
 
   def self.all
