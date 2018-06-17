@@ -2,7 +2,7 @@ class Owner
   attr_accessor :pets, :name
   @@all = []
 
-  def initialize
+  def initialize(name)
     @name = ""
     # @species = "human"
     @pets = {fishes: [], cats: [], dogs: []} # owner knows about its pets
