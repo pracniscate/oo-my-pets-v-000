@@ -6,7 +6,7 @@ class Owner
   def initialize(species)
     @pets = {fishes: [], cats: [], dogs: []} # owner knows about its pets
     @name = "" # keep track of the owners that have been created
-    @species = "human"
+    @species = "human" # init with a species
     @@all << self
   end
 
