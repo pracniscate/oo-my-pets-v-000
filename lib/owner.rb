@@ -1,6 +1,6 @@
 class Owner
   attr_accessor :pets, :name
-  attr_reader :species
+  attr_reader :species # cannot change it species
   @@all = []
 
   def initialize(species)
@@ -14,13 +14,18 @@ class Owner
     @@all
   end
 
-  # can count how many owners have been created
+  # can count how many owners have been created (1)
   def self.count
     @@all.length
   end
 
+  # (2)
   def self.reset_all
     @@all.clear
   end
+
+  def say_species 
+    puts "I am a #{@species}."
+  end  
 
 end
