@@ -53,13 +53,13 @@ class Owner
     pets[:fishes].each{ |fish| fish.mood = "happy"}
   end
 
-  def sell_pets # can sell all its pets, which make them nervous 
+  def sell_pets # can sell all its pets, which make them nervous
     pets.each do |species, animals|
       animals.each do |animal|
         animal.mood = "nervous"
       end
-      animals.clear 
+      animals.clear
     end
-  end 
-  
+  end
+
 end
